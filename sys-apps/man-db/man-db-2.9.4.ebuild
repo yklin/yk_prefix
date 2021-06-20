@@ -122,7 +122,7 @@ src_configure() {
 		--with-systemdtmpfilesdir="${EPREFIX}"/usr/lib/tmpfiles.d
 		--with-systemdsystemunitdir="$(systemd_get_systemunitdir)"
 		--disable-setuid #662438
-		--enable-cache-owner=man
+		--disable-cache-owner
 		--with-sections="${sections}"
 		$(use_enable nls)
 		$(use_enable static-libs static)
